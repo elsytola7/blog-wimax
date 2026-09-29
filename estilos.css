@@ -1,0 +1,633 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+    line-height: 1.7;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.seccion {
+    padding: 90px 0;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 24, 45, 0.96);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.navbar {
+    min-height: 70px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #5ee7ff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+
+    display: flex;
+    gap: 22px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #5ee7ff;
+}
+
+
+/* =========================
+   PORTADA
+========================= */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(4, 20, 42, 0.95),
+            rgba(9, 68, 105, 0.85)
+        );
+
+    color: white;
+}
+
+.hero-contenido {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.etiqueta {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border: 1px solid #5ee7ff;
+    border-radius: 30px;
+
+    color: #5ee7ff;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(60px, 10vw, 130px);
+    line-height: 1;
+    margin: 25px 0 10px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 25px 0;
+    font-size: 18px;
+    color: #dceeff;
+}
+
+.boton {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: #5ee7ff;
+    color: #09233d;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.boton:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(94,231,255,0.3);
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.seccion h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.numero {
+    color: #0787ad;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.tarjetas {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tarjeta {
+    background: white;
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(20,50,80,0.08);
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+}
+
+.icono {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   SECCIÓN OSCURA
+========================= */
+
+.oscuro {
+    background: #081a30;
+    color: white;
+}
+
+.oscuro p {
+    color: #c8d8e8;
+}
+
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+    margin-top: 50px;
+
+    border-left: 3px solid #5ee7ff;
+
+    padding-left: 30px;
+}
+
+.evento {
+    display: flex;
+    gap: 30px;
+
+    margin-bottom: 40px;
+}
+
+.evento > span {
+    color: #5ee7ff;
+    font-weight: bold;
+    font-size: 20px;
+    min-width: 70px;
+}
+
+.evento h3 {
+    margin-bottom: 5px;
+}
+
+
+/* =========================
+   PERSONAJES
+========================= */
+
+.personajes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    margin-top: 40px;
+}
+
+.persona {
+    background: white;
+    color: #172033;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.persona:hover {
+    transform: translateY(-7px);
+}
+
+.avatar {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   COBERTURA
+========================= */
+
+.azul {
+    background: #e8f7fc;
+}
+
+.cobertura-box {
+    margin-top: 45px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+.radar {
+    width: 300px;
+    height: 300px;
+
+    margin: auto;
+
+    border: 3px solid #0787ad;
+    border-radius: 50%;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onda {
+    position: absolute;
+
+    border: 2px solid #0787ad;
+    border-radius: 50%;
+}
+
+.onda1 {
+    width: 80px;
+    height: 80px;
+}
+
+.onda2 {
+    width: 170px;
+    height: 170px;
+}
+
+.onda3 {
+    width: 250px;
+    height: 250px;
+}
+
+.antena {
+    font-size: 45px;
+    z-index: 2;
+}
+
+.cobertura-texto h3 {
+    font-size: 60px;
+    color: #0787ad;
+}
+
+.cobertura-texto small {
+    display: block;
+    margin-top: 15px;
+}
+
+.subtitulo {
+    margin-top: 60px;
+}
+
+.lugares {
+    margin-top: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.lugares div {
+    background: white;
+    padding: 18px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+
+/* =========================
+   BOLIVIA
+========================= */
+
+.bolivia-grid {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.dato-bolivia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.dato {
+    background: #e8f7fc;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+.dato span {
+    display: block;
+    font-size: 30px;
+}
+
+.dato strong {
+    display: block;
+    margin-top: 10px;
+}
+
+.dato small {
+    color: #607080;
+}
+
+
+/* =========================
+   EMPRESAS
+========================= */
+
+.empresas-grid {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.empresa {
+    padding: 30px;
+
+    border: 1px solid #29445f;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.empresa:hover {
+    border-color: #5ee7ff;
+    transform: translateY(-5px);
+}
+
+.empresa span {
+    font-size: 35px;
+}
+
+.empresa h3 {
+    margin: 15px 0 5px;
+}
+
+
+/* =========================
+   VENTAJAS
+========================= */
+
+.ventajas {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.ventajas div {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+}
+
+.ventajas span {
+    font-size: 35px;
+}
+
+
+/* =========================
+   CONCLUSIÓN
+========================= */
+
+.conclusion {
+    padding: 90px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #073a58,
+            #0b728d
+        );
+
+    color: white;
+
+    text-align: center;
+}
+
+.conclusion .contenedor {
+    max-width: 800px;
+}
+
+.conclusion h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BOTÓN ARRIBA
+========================= */
+
+#arriba {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #0787ad;
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    display: none;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 40px;
+
+    background: #04101e;
+
+    color: #aab9c8;
+
+    text-align: center;
+}
+
+footer h3 {
+    color: #5ee7ff;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .menu {
+        display: none;
+    }
+
+    .tarjetas,
+    .personajes,
+    .empresas-grid,
+    .ventajas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cobertura-box,
+    .bolivia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lugares {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .seccion {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 65px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .tarjetas,
+    .personajes,
+    .empresas-grid,
+    .ventajas,
+    .dato-bolivia,
+    .lugares {
+        grid-template-columns: 1fr;
+    }
+
+    .evento {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .radar {
+        width: 250px;
+        height: 250px;
+    }
+}
